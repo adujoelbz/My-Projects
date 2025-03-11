@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clock-container {
+  font-family: monospace;
+  width: 100%;
+  border: 2px solid #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(keith-misner-h0Vxgz5tyXA-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clock {
+  backdrop-filter: blur(15px);
+  background-color: rgba(240, 248, 255, 0.142);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  padding: 1rem;
+  font-weight: 800;
+  color: aliceblue;
+}
