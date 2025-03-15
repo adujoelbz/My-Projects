@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="calcus.css" />
+    <link rel="shortcut icon" href="lightbulb.png" type="image/x-icon" />
+    <script src="calcus.js" defer></script>
+    <title>AJA TECH CALCULATOR</title>
+  </head>
+  <body>
+    <section class="main-section">
+      <section class="display__section">
+        <input type="text" readonly id="display" value="" />
+      </section>
+      <section class="input__section">
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="deleteDisplay()">
+          <img src="../IMG/8635367.png" width="40" height="40" alt="" />
+        </button>
+        <button onclick="appendOpenParenthesis()">&#40;</button>
+        <button onclick="appendCloseParenthesis()">&#41;</button>
+        <button class="specButtons" onclick="append('7')">7</button>
+        <button class="specButtons" onclick="append('8')">8</button>
+        <button class="specButtons" onclick="append('9')">9</button>
+        <button onclick="append('/')">&#x00F7;</button>
+        <button class="specButtons" onclick="append('4')">4</button>
+        <button class="specButtons" onclick="append('5')">5</button>
+        <button class="specButtons" onclick="append('6')">6</button>
+        <button onclick="append('*')">&#xD7;</button>
+        <button class="specButtons" onclick="append('1')">1</button>
+        <button class="specButtons" onclick="append('2')">2</button>
+        <button class="specButtons" onclick="append('3')">3</button>
+        <button onclick="append('-')">&#x2D;</button>
+        <button class="equals" onclick="calculate()">&#x3D;</button>
+        <button class="specButtons" onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+        <button onclick="append('+')">&#x2B;</button>
+      </section>
+    </section>
+  </body>
+</html>
