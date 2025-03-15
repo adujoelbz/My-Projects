@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="convert.css" />
+    <link rel="icon" href="lightbulb.png" type="image.x-icon">
+    <script src="convert.js" defer></script>
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <head></head>
+    <main>
+        <section class="main__section">
+            <form action="">
+            <h2>Temperature Converter</h2>
+            <input type="number" value="0" id="input_area" />
+            <p class="radio_p">
+                <input
+                type="radio"
+                name="temperature"
+                id="celsius_to_fahrenheit"
+                value="celsius_to_fahrenheit"
+                />
+                <label for="celsius_to_fahrenheit">Celsius → Fahrenheit</label>
+            </p>
+            <p class="radio_p">
+                <input
+                type="radio"
+                name="temperature"
+                id="celsius_to_kelvin"
+                value="celsius_to_kelvin"
+                />
+                <label for="celsius_to_kelvin">Celsius → Kelvin</label>
+            </p class="radio_p">
+            <p class="radio_p">
+                <input
+                type="radio"
+                name="temperature"
+                id="fahrenheit_to_celsius"
+                value="fahrenheit_to_celsius"
+                />
+                <label for="fahrenheit_to_celsius">Fahrenheit → Celsius</label>
+            </p>
+            <p class="radio_p">
+                <input
+                type="radio"
+                name="temperature"
+                id="fahrenheit_to_kelvin"
+                value="fahrenheit_to_kelvin"
+                />
+                <label for="fahrenheit_to_kelvin">Fahrenheit → Kelvin</label>
+            </p>
+            <p class="radio_p">
+                <input
+                type="radio"
+                name="temperature"
+                id="kelvin_to_celsius"
+                value="kelvin_to_celsius"
+                />
+                <label for="kelvin_to_celsius">Kelvin → Celsius</label>
+            </p>
+            <p class="radio_p">
+                <input
+                type="radio"
+                name="temperature"
+                id="kelvin_to_fahrenheit"
+                value="kelvin_to_fahrenheit"
+                />
+                <label for="kelvin_to_fahrenheit">Kelvin → Fahrenheit</label>
+            </p>
+            </form>
+            <button id="btn" onclick="convert()">Convert</button>
+            <p class="result" id="result"></p>
+    </section>
+    </main>
+    <footer>&copy; AJA TECH</footer>
+  </body>
+</html>
