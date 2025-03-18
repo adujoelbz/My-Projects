@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --BG-IMAGE: url(2817625.jpg);
+  --BTN-COLOR: rgb(4, 73, 50);
+  --BTN-HOVER-COLOR: rgb(17, 149, 105);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: var(--BG-IMAGE);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__section {
+  border: 2px solid darkgreen;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px darkgreen;
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+}
+
+.main__section h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.progress__section {
+  background-color: #d7f2d8;
+  padding: 1rem 0.5rem;
+  margin: 2.5rem 0;
+  border-radius: 1rem;
+  box-shadow: 1px 0.5px 2px #4caf50;
+  position: relative;
+  display: none;
+}
+
+.progress-text {
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.encouragement {
+  margin-bottom: 2.5rem;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 7px;
+  background-color: #ccc;
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+
+.progress-bar-fill {
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.input__section input {
+  width: 80%;
+  height: 3rem;
+  border: 0.1px solid darkgreen;
+  outline: none;
+  padding: 0.6rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 1px 0.5px 2px #4caf50;
+  background-color: #d7f2d8;
+}
+
+.input__section button {
+  background-color: var(--BTN-COLOR);
+  color: aliceblue;
+  border: none;
+  /* padding: 0.6rem 0.7rem; */
+  padding: 8px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  margin-inline-start: 0.5rem;
+  box-shadow: 1px 0.5px 2px #4caf50;
+}
+
+.input__section button:hover {
+  background-color: var(--BTN-HOVER-COLOR);
+}
+
+.lists-container li {
+  width: 100%;
+  background: #d7f2d8;
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  list-style-type: none;
+  border: 0.5px solid #4caf50;
+  box-shadow: 0.5px 0.5px 3px darkgreen;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4caf50; /* Default border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* Default background color */
+  cursor: pointer;
+  position: relative;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+  background-color: darkgreen; /* Green background when checked */
+  border-color: #4caf50; /* Green border when checked */
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔"; /* Checkmark symbol */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Color of the checkmark */
+  font-size: 12px;
+}
+
+.editButton {
+  background-color: #4caf50;
+  color: aliceblue;
+  position: absolute;
+  padding: 0.5rem;
+  border-radius: 50%;
+  right: 4.7rem;
+  transition: background ease 0.2s;
+}
+
+.deleteButton {
+  background-color: darkgreen;
+  color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 2.5rem;
+  transition: background ease 0.5s;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}

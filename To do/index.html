@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="to-do.js" type="module" defer></script>
+    <link rel="stylesheet" href="to-do.css" />
+    <link rel="shortcut icon" href="icons8-bulb-96.png" type="image/x-icon" />
+    <title>AJA TECH TO-DO</title>
+  </head>
+  <body>
+    <head></head>
+    <main>
+      <section class="main__section">
+        <h2>To-Do App</h2>
+        <section class="progress__section" id="progress__section">
+          <div id="encouragement" class="encouragement">Keep it up!!!</div>
+          <div id="progress-text" class="progress-text">0/0</div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+          </div>
+        </section>
+        <section class="input__section">
+          <input type="text" id="input" placeholder="Add a new task..." />
+          <button id="button" class="button"><i class="bi bi-plus"></i></button>
+        </section>
+        <section class="lists__section">
+          <ul id="lists-container" class="lists-container"></ul>
+          <img
+            id="img"
+            src="13297280_5184243-removebg-preview.png"
+            alt="meditation image"
+            width="300"
+            height="200"
+          />
+        </section>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
